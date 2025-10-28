@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>날씨</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="weather-app">
+    <header>
+      <h1 class="logo">구르미 날씨</h1>
+      <form class="search" role="search">
+        <input type="search" placeholder="지역을 입력하세요.">
+      </form>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar">
+        <section class="current-weather">
+          <div class="current-temp">0℃</div>
+          <div class="current-icon">☁️</div>
+          <div class="current-location">수원시 팔달구</div>
+        </section>
+
+        <section class="weekly-forecast">
+          <h2>주간 예보</h2>
+          <ul>
+            <li>
+              <span class="icon">☁️</span>
+              <span class="temp">0℃ / 0℃</span>
+              <span class="day">월</span>
+            </li>
+            <li>
+              <span class="icon">☁️</span>
+              <span class="temp">0℃ / 0℃</span>
+              <span class="day">화</span>
+            </li>
+            <li>
+              <span class="icon">☁️</span>
+              <span class="temp">0℃ / 0℃</span>
+              <span class="day">수</span>
+            </li>
+            <li>
+              <span class="icon">☁️</span>
+              <span class="temp">0℃ / 0℃</span>
+              <span class="day">목</span>
+            </li>
+            <li>
+              <span class="icon">☁️</span>
+              <span class="temp">0℃ / 0℃</span>
+              <span class="day">금</span>
+            </li>
+            <li>
+              <span class="icon">☁️</span>
+              <span class="temp">0℃ / 0℃</span>
+              <span class="day">토</span>
+            </li>
+            <li>
+              <span class="icon">☁️</span>
+              <span class="temp">0℃ / 0℃</span>
+              <span class="day">일</span>
+            </li>
+
+          </ul>
+        </section>
+      </aside>
+
+      <section class="main-content">
+        <div class="hourly-forecast">
+          <h2>시간별 예보</h2>
+          <ul class="hourly-list">
+            <li class="hourly-item">
+              <span class="hour">현재</span>
+              <span class="icon">☁️</span>
+              <span class="temp">0</span>
+            </li>
+            <li class="hourly-item">
+              <span class="hour">02시</span>
+              <span class="icon">☁️</span>
+              <span class="temp">0</span>
+            </li>
+            <li class="hourly-item">
+              <span class="hour">03시</span>
+              <span class="icon">☁️</span>
+              <span class="temp">0</span>
+            </li>
+            <li class="hourly-item">
+              <span class="hour">04시</span>
+              <span class="icon">☁️</span>
+              <span class="temp">0</span>
+            </li>
+            <li class="hourly-item">
+              <span class="hour">05시</span>
+              <span class="icon">☁️</span>
+              <span class="temp">0</span>
+            </li>
+            <li class="hourly-item">
+              <span class="hour">06시</span>
+              <span class="icon">☁️</span>
+              <span class="temp">0</span>
+            <li class="hourly-item">
+              <span class="hour">07시</span>
+              <span class="icon">☁️</span>
+              <span class="temp">0</span>
+            </li>
+            <li class="hourly-item">
+              <span class="hour">08시</span>
+              <span class="icon">☁️</span>
+              <span class="temp">0</span>
+            </li>
+            </li>
+          </ul>
+        </div>
+
+        <div class="today-info">
+          <div>
+            <h2>오늘 기상 정보</h2>
+          </div>
+
+          <div class="today-info-grid">
+            <div class="air-quality">
+              <h3>대기질</h3>
+              <p>좋음</p>
+            </div>
+
+            <div class="air-quality">
+              <h3>자외선</h3>
+              <p>보통</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>

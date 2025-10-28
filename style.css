@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #222;
+  background: #f3f3f3;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background: rgba(255, 255, 255, 0.9);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.search {
+  position: relative;
+  width: min(260px 60vw)
+}
+
+.search input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  padding: 0 16px;
+  font-size: 15px;
+  transition: border-color 0.2s ease, box-shadow 0.2 ease;
+
+}
+
+.search input:focus {
+  border-color: aquamarine;
+  box-shadow: 0 0 0 3px rgba(60, 130, 240, 0.25);
+  outline: none;
+}
+
+/* Layout */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Current Weather */
+.current-weather {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.current-temp {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.current-location {
+  font-size: 12px;
+  color: #666;
+  margin-top: 12px;
+  border-top: 1px dashed #c8c8c8;
+}
+
+/* Weekly */
+.weekly-forecast {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.weekly-forecast h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.weekly-forecast ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.weekly-forecast li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px dashed #c8c8c8;
+}
+
+.weekly-forecast li:last-child {
+  border-bottom: none;
+}
+
+.weekly-forecast .icon {
+  font-size: 24px;
+}
+
+.weekly-forecast .temp {
+  font-size: 18px;
+}
+
+.weekly-forecast .day {
+  font-weight: 700;
+  color: rgba(34, 34, 34, 0.6);
+}
+
+/* Hourly */
+.hourly-forecast {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.hourly-forecast h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.hourly-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+}
+.hourly-item{
+  flex: 0 0 auto;background: #f3f3f3;
+  border-radius: 12px;
+  text-align: center;
+  padding: 10px;
+  width: 48px;
+}
+.hourly-item .hour {
+  font-size: 14px;
+}
+
+.hourly-item .icon{
+  font-size: 32px;
+}
+.hourly-item .temp{
+  font-weight: 600;
+  margin-top: 4px;
+
+}

@@ -143,22 +143,82 @@ header {
   padding: 0;
   overflow-x: auto;
 }
-.hourly-item{
-  flex: 0 0 auto;background: #f3f3f3;
+
+.hourly-item {
+  flex: 0 0 auto;
+  background: #f3f3f3;
   border-radius: 12px;
   text-align: center;
   padding: 10px;
   width: 48px;
+  cursor: default;
+  box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.08);
+  margin: 6px 4px 12px 4px;
 }
+
+.hourly-item:hover{
+  background: #e2e2e2;
+
+}
+
 .hourly-item .hour {
   font-size: 14px;
 }
 
-.hourly-item .icon{
+.hourly-item .icon {
   font-size: 32px;
 }
-.hourly-item .temp{
+
+.hourly-item .temp {
   font-weight: 600;
   margin-top: 4px;
 
+}
+
+/* today-info */
+.today-info {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+}
+
+.today-info h2 {
+  font-size: 18px;
+
+}
+
+.today-info-grid {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.today-info-grid>div {
+  background: #f3f3f3;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+  width: 160px;
+  height: 160px;
+}
+
+.today-info-grid>div>h3 {
+  font-size: 12px;
+  color: rgba(36, 36, 36, 0.3);
+}
+
+.today-info-grid>div>span {
+  font-size: 32px;
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+.today-info-grid>div>p {
+  font-size: 24px;
+  font-weight: 400;
+  margin-left: 8px;
 }

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>날씨</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="CSS/main.css">
 </head>
 
 <body>
@@ -21,7 +21,9 @@
       <aside class="sidebar">
         <section class="current-weather">
           <div class="current-temp">0℃</div>
-          <div class="current-icon">☁️</div>
+          <div class="current-icon">
+            <img id="weather-icon" src="https://openweathermap.org/img/wn/01d.png" alt="날씨 아이콘">
+          </div>
           <div class="current-location">수원시 팔달구</div>
         </section>
 
@@ -121,20 +123,14 @@
           </div>
 
           <div class="today-info-grid">
-            <div class="air-quality">
-              <h3>대기질</h3>
-              <p>좋음</p>
-            </div>
-
-            <div class="air-quality">
-              <h3>자외선</h3>
-              <p>보통</p>
-            </div>
+            
           </div>
+          
         </div>
       </section>
     </div>
   </main>
+  <script src="Script/openWeatherAPI.js"></script>
 </body>
 
 </html>

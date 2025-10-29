@@ -118,7 +118,7 @@ async function loadWeather(lat, lon, name = "현재 위치") {
                 const min = Math.round(Math.min(...dayData.temps));
                 const max = Math.round(Math.max(...dayData.temps));
                 const icon = dayData.icons[Math.floor(dayData.icons.length / 2)];
-                const li = document.createSelector("li");
+                const li = document.createElement("li");
                 li.innerHTML = `
                 <span class="icon"><img src="https://openweathermap.org/img/wn/${icon}.png" alt=""></span>
                 <span class="temp">${min}℃ / ${max}℃</span>
